@@ -1,0 +1,6 @@
+framework module Pods_Week4Assignment {
+  umbrella header "Pods-Week4Assignment-umbrella.h"
+
+  export *
+  module * { export * }
+}
