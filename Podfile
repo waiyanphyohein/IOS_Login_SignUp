@@ -7,6 +7,8 @@ target 'Week4Assignment' do
 
   # Pods for Week4Assignment
   pod 'Parse'
+  pod 'NVActivityIndicatorView'
+
   target 'Week4AssignmentTests' do
     inherit! :search_paths
     # Pods for testing

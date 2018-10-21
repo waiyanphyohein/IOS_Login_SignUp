@@ -16,6 +16,7 @@
 		864BEC18217BBF2400EA8CAE /* Week4AssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864BEC17217BBF2400EA8CAE /* Week4AssignmentUITests.swift */; };
 		86A7C4A6217BCA18004F7C5C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A7C4A5217BCA18004F7C5C /* LoginViewController.swift */; };
 		86A7C4A8217BCDD0004F7C5C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A7C4A7217BCDD0004F7C5C /* SignUpViewController.swift */; };
+		86A7C4AA217BF088004F7C5C /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A7C4A9217BF088004F7C5C /* UserViewController.swift */; };
 		A9A266BF2D30FEADB2EBDFF3 /* Pods_Week4AssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD0D1543F2632281492D10BD /* Pods_Week4AssignmentUITests.framework */; };
 		B702C7439C3D3DA497CDD29B /* Pods_Week4AssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D795F968587B6CD296EB2AA /* Pods_Week4AssignmentTests.framework */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,7 @@
 		864BEC19217BBF2400EA8CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86A7C4A5217BCA18004F7C5C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		86A7C4A7217BCDD0004F7C5C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		86A7C4A9217BF088004F7C5C /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		AD0D1543F2632281492D10BD /* Pods_Week4AssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Week4AssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E91C54536292D41F5EC832 /* Pods-Week4AssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Week4AssignmentUITests.release.xcconfig"; path = "Target Support Files/Pods-Week4AssignmentUITests/Pods-Week4AssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D22C9243CFAAA698D396A415 /* Pods-Week4Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Week4Assignment.debug.xcconfig"; path = "Target Support Files/Pods-Week4Assignment/Pods-Week4Assignment.debug.xcconfig"; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 			children = (
 				86A7C4A5217BCA18004F7C5C /* LoginViewController.swift */,
 				86A7C4A7217BCDD0004F7C5C /* SignUpViewController.swift */,
+				86A7C4A9217BF088004F7C5C /* UserViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Week4Assignment/Pods-Week4Assignment-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -368,6 +372,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86A7C4A6217BCA18004F7C5C /* LoginViewController.swift in Sources */,
+				86A7C4AA217BF088004F7C5C /* UserViewController.swift in Sources */,
 				86A7C4A8217BCDD0004F7C5C /* SignUpViewController.swift in Sources */,
 				864BEBF8217BBF2200EA8CAE /* AppDelegate.swift in Sources */,
 			);

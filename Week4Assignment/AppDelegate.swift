@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Parse;
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,7 +21,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             configuration.applicationId = "InstagramIOS"
             configuration.clientKey = "abcdefghijk"
             configuration.server = "http://ios-app-instagram.herokuapp.com/instagramIOS"
-            }))
+        }));
+        
+//        if PFUser.current() != nil {
+//            // Code to execute if user is logged in
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            let viewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController")
+//            
+//            self.window?.rootViewController = viewController
+//            self.window?.makeKeyAndVisible()
+//            
+//        } else {
+//        }
+        NotificationCenter.default.addObserver(forName: Notification.Name("didLogout"), object: nil, queue: OperationQueue.main) { (Notification) in
+            print("Logout notification received")
+            // TODO: Logout the User
+        NotificationCenter.default.post(name: NSNotification.Name("didLogout"), object: nil)
+            // TODO: Load and show the login view controller
+        }
+
+
+
         return true
     }
 
