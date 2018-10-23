@@ -14,9 +14,9 @@ class UserViewController: UIViewController {
 
     @IBOutlet weak var TitleField: UINavigationItem!
     override func viewDidLoad() {
-        TitleField.title = PFUser.current()?.username;
-        super.viewDidLoad()
         
+        super.viewDidLoad()
+        TitleField.title = PFUser.current()?.username?.uppercased();
         // Do any additional setup after loading the view.
     }
     
@@ -28,7 +28,7 @@ class UserViewController: UIViewController {
             } else {
                 print("Successful loggout")
                 // Load and show the login view controller
-                
+                self.performSegue(withIdentifier: "gotoLogin", sender: nil);
             }
         })
     }

@@ -17,18 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-60" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e8G-DA-eFP">
-                                <rect key="frame" x="156" y="304" width="62" height="60"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="Icon-60" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e8G-DA-eFP">
+                                <rect key="frame" x="137.5" y="283.5" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="FZ1-Pj-r0m"/>
-                                    <constraint firstAttribute="width" constant="62" id="rNu-cF-baq"/>
+                                    <constraint firstAttribute="height" constant="100" id="7nz-Ws-w2t"/>
+                                    <constraint firstAttribute="width" secondItem="e8G-DA-eFP" secondAttribute="height" multiplier="1:1" id="Moj-iB-waH"/>
+                                    <constraint firstAttribute="width" constant="100" id="Qvw-Ed-ZAI"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagram" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAf-jZ-KgQ">
-                                <rect key="frame" x="142" y="373" width="91" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagram" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAf-jZ-KgQ">
+                                <rect key="frame" x="146" y="391.5" width="83.5" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="4YR-DY-9El"/>
-                                    <constraint firstAttribute="width" constant="91" id="VBF-RW-Dcx"/>
+                                    <constraint firstAttribute="height" constant="21" id="8B7-bE-0J0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -37,13 +37,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e8G-DA-eFP" secondAttribute="trailing" constant="157" id="6Y5-4e-5tF"/>
-                            <constraint firstItem="VAf-jZ-KgQ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="AcQ-Lv-Yee"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VAf-jZ-KgQ" secondAttribute="bottom" constant="273" id="Dpe-EU-DWC"/>
-                            <constraint firstItem="e8G-DA-eFP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="284" id="Kpa-mt-iOQ"/>
-                            <constraint firstItem="e8G-DA-eFP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="156" id="Xcm-YV-HvC"/>
-                            <constraint firstItem="VAf-jZ-KgQ" firstAttribute="top" secondItem="e8G-DA-eFP" secondAttribute="bottom" constant="9" id="ato-Aa-wgq"/>
-                            <constraint firstItem="VAf-jZ-KgQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142" id="rD2-bd-aDL"/>
+                            <constraint firstItem="e8G-DA-eFP" firstAttribute="centerX" secondItem="VAf-jZ-KgQ" secondAttribute="centerX" id="TCe-wJ-eD7"/>
+                            <constraint firstItem="e8G-DA-eFP" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="XrS-dc-ZHy"/>
+                            <constraint firstItem="VAf-jZ-KgQ" firstAttribute="top" secondItem="e8G-DA-eFP" secondAttribute="bottom" constant="8" symbolic="YES" id="wbs-Bm-PJ8"/>
+                            <constraint firstItem="e8G-DA-eFP" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="xkj-zr-rFh"/>
+                            <constraint firstItem="e8G-DA-eFP" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ztS-RN-etK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

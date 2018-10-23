@@ -43,8 +43,9 @@ class SignUpViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let Seag = segue.destination as! UserViewController;
-        Seag.TitleField.title = UserNameField.text;
+        
+        _ = segue.destination as! UserViewController;
+        
     }
     /*
     // MARK: - Navigation
