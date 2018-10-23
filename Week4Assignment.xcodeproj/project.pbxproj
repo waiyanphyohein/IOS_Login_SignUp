@@ -17,6 +17,10 @@
 		86A7C4A6217BCA18004F7C5C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A7C4A5217BCA18004F7C5C /* LoginViewController.swift */; };
 		86A7C4A8217BCDD0004F7C5C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A7C4A7217BCDD0004F7C5C /* SignUpViewController.swift */; };
 		86A7C4AA217BF088004F7C5C /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A7C4A9217BF088004F7C5C /* UserViewController.swift */; };
+		86A7C4AC217E9EDF004F7C5C /* PhotoMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A7C4AB217E9EDF004F7C5C /* PhotoMapViewController.swift */; };
+		86A7C4AE217EA0F3004F7C5C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A7C4AD217EA0F3004F7C5C /* Post.swift */; };
+		86A7C4B1217EA313004F7C5C /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A7C4B0217EA313004F7C5C /* CameraViewController.swift */; };
+		86A7C4B3217EAD09004F7C5C /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A7C4B2217EAD09004F7C5C /* PreviewViewController.swift */; };
 		A9A266BF2D30FEADB2EBDFF3 /* Pods_Week4AssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD0D1543F2632281492D10BD /* Pods_Week4AssignmentUITests.framework */; };
 		B702C7439C3D3DA497CDD29B /* Pods_Week4AssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D795F968587B6CD296EB2AA /* Pods_Week4AssignmentTests.framework */; };
 /* End PBXBuildFile section */
@@ -59,6 +63,10 @@
 		86A7C4A5217BCA18004F7C5C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		86A7C4A7217BCDD0004F7C5C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		86A7C4A9217BF088004F7C5C /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		86A7C4AB217E9EDF004F7C5C /* PhotoMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoMapViewController.swift; sourceTree = "<group>"; };
+		86A7C4AD217EA0F3004F7C5C /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		86A7C4B0217EA313004F7C5C /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		86A7C4B2217EAD09004F7C5C /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 		AD0D1543F2632281492D10BD /* Pods_Week4AssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Week4AssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E91C54536292D41F5EC832 /* Pods-Week4AssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Week4AssignmentUITests.release.xcconfig"; path = "Target Support Files/Pods-Week4AssignmentUITests/Pods-Week4AssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D22C9243CFAAA698D396A415 /* Pods-Week4Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Week4Assignment.debug.xcconfig"; path = "Target Support Files/Pods-Week4Assignment/Pods-Week4Assignment.debug.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +139,7 @@
 		864BEBF6217BBF2200EA8CAE /* Week4Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				86A7C4AF217EA245004F7C5C /* Models */,
 				86A7C4A4217BCA09004F7C5C /* ViewController */,
 				864BEBF7217BBF2200EA8CAE /* AppDelegate.swift */,
 				864BEBFB217BBF2200EA8CAE /* Main.storyboard */,
@@ -165,8 +174,19 @@
 				86A7C4A5217BCA18004F7C5C /* LoginViewController.swift */,
 				86A7C4A7217BCDD0004F7C5C /* SignUpViewController.swift */,
 				86A7C4A9217BF088004F7C5C /* UserViewController.swift */,
+				86A7C4AB217E9EDF004F7C5C /* PhotoMapViewController.swift */,
+				86A7C4B0217EA313004F7C5C /* CameraViewController.swift */,
+				86A7C4B2217EAD09004F7C5C /* PreviewViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		86A7C4AF217EA245004F7C5C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				86A7C4AD217EA0F3004F7C5C /* Post.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		C742DC76C83009724B6F907B /* Frameworks */ = {
@@ -409,10 +429,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86A7C4AC217E9EDF004F7C5C /* PhotoMapViewController.swift in Sources */,
 				86A7C4A6217BCA18004F7C5C /* LoginViewController.swift in Sources */,
 				86A7C4AA217BF088004F7C5C /* UserViewController.swift in Sources */,
+				86A7C4AE217EA0F3004F7C5C /* Post.swift in Sources */,
+				86A7C4B1217EA313004F7C5C /* CameraViewController.swift in Sources */,
 				86A7C4A8217BCDD0004F7C5C /* SignUpViewController.swift in Sources */,
 				864BEBF8217BBF2200EA8CAE /* AppDelegate.swift in Sources */,
+				86A7C4B3217EAD09004F7C5C /* PreviewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
